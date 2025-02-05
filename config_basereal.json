@@ -1,0 +1,1592 @@
+{
+  "config1": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config2": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config3": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config4": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config5": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config6": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config7": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config8": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config9": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config10": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config11": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config12": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config13": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config14": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config15": {
+    "tamanho_BF": 100,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config16": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config17": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config18": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config19": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config20": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config21": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config22": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config23": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config24": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config25": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config26": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config27": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config28": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config29": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config30": {
+    "tamanho_BF": 100,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config31": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config32": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config33": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config34": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config35": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config36": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config37": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config38": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config39": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config40": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config41": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config42": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config43": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config44": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config45": {
+    "tamanho_BF": 200,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config46": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config47": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config48": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config49": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config50": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config51": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config52": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config53": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config54": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config55": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config56": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config57": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config58": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config59": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config60": {
+    "tamanho_BF": 200,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config61": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config62": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config63": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config64": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config65": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config66": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config67": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config68": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config69": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config70": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config71": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config72": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config73": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config74": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config75": {
+    "tamanho_BF": 400,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config76": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config77": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config78": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config79": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config80": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config81": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config82": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config83": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config84": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config85": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config86": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config87": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config88": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config89": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config90": {
+    "tamanho_BF": 400,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config91": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config92": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config93": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config94": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config95": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config96": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config97": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config98": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config99": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config100": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config101": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config102": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config103": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config104": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config105": {
+    "tamanho_BF": 500,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config106": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config107": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config108": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config109": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config110": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config111": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config112": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config113": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config114": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config115": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config116": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config117": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config118": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config119": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config120": {
+    "tamanho_BF": 500,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config121": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config122": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config123": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config124": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config125": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config126": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config127": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config128": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config129": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config130": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config131": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config132": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config133": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config134": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config135": {
+    "tamanho_BF": 300,
+    "quant_hash": 2,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config136": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config137": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config138": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config139": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config140": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "DoubleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config141": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config142": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config143": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config144": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config145": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "TripleHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  },
+  "config146": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "ABF",
+      "A": "df_a_ABF.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_ABF.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config147": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "CLK",
+      "A": "df_a_CLK.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_CLK.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    }
+  },
+  "config148": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.3
+  },
+  "config149": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.4
+  },
+  "config150": {
+    "tamanho_BF": 300,
+    "quant_hash": 3,
+    "tipo_hash": "EnhancedDHash",
+    "tipo_bloom": {
+      "nome": "RLB",
+      "A": "df_a_RLB.select('ID','bloom').withColumnRenamed('bloom','BF')",
+      "B": "df_b_RLB.select('ID','bloom','check').withColumnRenamed('bloom','BF')"
+    },
+    "porcent_rlb": 0.5
+  }
+}
